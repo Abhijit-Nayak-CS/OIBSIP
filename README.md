@@ -1,4 +1,5 @@
 # OIBSIP
-This is my first Data Science Git Repository
+This is my first Data Science Git project
 
-# This is Iris Dataset Project
+# Oasis Infobyte Internship Project
+
