@@ -62,6 +62,7 @@ print(f"MAE: {mae:.4f}")
 print(f"R2 score: {r2:.4f}")
 
 # 10) Plots: True vs Predicted and Residuals
+# Checks accuracy
 plt.figure(figsize=(6,4))
 plt.scatter(y_test, y_pred, label='Predicted (test)', marker='x')
 plt.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', label='Perfect prediction')
@@ -71,6 +72,7 @@ plt.title("True vs Predicted Sales")
 plt.legend()
 plt.show()
 
+# Checks model quality
 residuals = y_test - y_pred
 plt.figure(figsize=(6,4))
 plt.scatter(y_pred, residuals)
